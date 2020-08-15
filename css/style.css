@@ -332,7 +332,7 @@ header {
 
 footer {
   background-color: #333;
-  padding: 50px;
+  padding-top: 50px;
   font-size: 80%;
   margin-top: 4%;
   text-align: center;
@@ -357,14 +357,14 @@ footer h3 {
   text-decoration: none;
   color: #888;
   border: 0;
-  transition: color 0.2s;
+  transition: color 0.3s;
   font-size: 160%;
 }
 .ion-social-facebook,
 .ion-social-twitter,
 .ion-social-googleplus,
 .ion-social-instagram {
-  transition: color 0.2s;
+  transition: color 0.3s;
 }
 .ion-social-facebook:hover {
   color: #3b5998;
