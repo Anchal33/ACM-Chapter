@@ -5,40 +5,41 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1.0" />
   <title>ACM STUDENT CHAPTER</title>
+  
   <!-- CDNs -->
   <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" />
   <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&display=swap"
     rel="stylesheet" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js" charset="utf-8"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-  <!-- Styles and scripts -->
+  <!-- Styles  -->
   <link rel="stylesheet" href="css/normalize.css" />
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/queries.css" />
 
-  <script src="script.js" charset="utf-8" defer></script>
+  
 </head>
 
 <body>
   <header>
-    <nav>
-      <div class="row">
-        <img class="logo" src="css/images/acm.png" alt="logo" />
+    <nav class="navbar navbar-expand-lg">
+      <a class="navbar-brand" href="#"><img class="logo" src="./css/images/acm.png" alt=""></a>
+  
+      <!-- navbar toggler -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon "><i class="fa fa-bars fa-lg" aria-hidden="true"></i></span>
+      </button>
+  
+      <div class="collapse navbar-collapse flex-row-reverse" id="nav">
+          <ul class="navbar-nav">
+              <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+              <li class="nav-item"><a class="nav-link" href="#events">Events</a></li>
+              <li class="nav-item"><a class="nav-link" href="#team">Office Bearers</a></li>
+              <li class="nav-item"><a class="nav-link" href="#footer">Contact</a></li>
+          </ul>
+      </div>    
+  </nav>
 
-        <ul class="main-nav js-main-nav">
-          <li><a href="#about">About Us</a></li>
-          <li><a href="#events">Events</a></li>
-          <li><a href="#team">Office Bearers</a></li>
-          <li><a href="#footer">Contact</a></li>
-        </ul>
-        <a class="mobile-nav-icon"><i class="ion-navicon-round"></i></a>
-      </div>
-    </nav>
     <div class="hero-text-box">
       <h1>ACM STUDENT CHAPTER</h1>
       <a class="btn btn-full" href="#events">Events</a>
@@ -320,6 +321,23 @@
       </p>
     </div>
   </footer>
+
+
+  <!-- Script section -->
+  
+  <!-- Internal script -->
+  <script src="script.js" charset="utf-8" defer></script>
+  
+  <!-- Font awesome cdn -->
+  <script src="https://use.fontawesome.com/8c064db0ff.js"></script>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js" charset="utf-8"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+  <!-- BootStrap jQ Script -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
 </body>
 
 </html>
