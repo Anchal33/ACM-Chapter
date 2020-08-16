@@ -43,77 +43,78 @@
   .hero-text-box {
     padding: 0 4%;
   }
+
+  .heading {
+    font-size: 200%;
+  }
+  h1 {
+    font-size: 180%;
+  }
+  h2 {
+    font-size: 150%;
+  }
+
+  .main-nav {
+    display: none;
+  }
+  .mobile-nav-icon {
+    display: inline-block;
+  }
+
+  .main-nav {
+    float: left;
+    margin-top: 30px;
+    margin-left: 25px;
+  }
+
+  .main-nav li {
+    display: block;
+  }
+
+  .main-nav li a:link,
+  .main-nav li a:visited {
+    display: block;
+    border: 0;
+    padding: 10px 0;
+    font-size: 100%;
+  }
+  .event {
+    width: 40%;
+    margin-bottom: 5px;
+    cursor: pointer;
+  }
+  .event h3 {
+    padding: 10px;
+  }
+
+  .sticky .main-nav {
+    margin-top: 10px;
+  }
+
+  .sticky .main-nav li a:link,
+  .sticky .main-nav li a:visited {
+    padding: 10px 0;
+  }
+  .sticky .mobile-nav-icon {
+    margin-top: 10px;
+  }
+  .sticky .mobile-nav-icon i {
+    color: #555;
+  }
+
+  .long-copy {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .mam {
+    margin: 0;
+  }
+  .mam img {
+    float: left;
+  }
 }
 
-.heading {
-  font-size: 200%;
-}
-.main-nav {
-  display: none;
-}
-.mobile-nav-icon {
-  display: inline-block;
-}
-
-.main-nav {
-  float: left;
-  margin-top: 30px;
-  margin-left: 25px;
-}
-
-.main-nav li {
-  display: block;
-}
-
-.main-nav li a:link,
-.main-nav li a:visited {
-  display: block;
-  border: 0;
-  padding: 10px 0;
-  font-size: 100%;
-}
-.event {
-  width: 40%;
-  margin-bottom: 5px;
-  cursor: pointer;
-}
-.event h3 {
-  padding: 10px;
-}
-
-.sticky .main-nav {
-  margin-top: 10px;
-}
-
-.sticky .main-nav li a:link,
-.sticky .main-nav li a:visited {
-  padding: 10px 0;
-}
-.sticky .mobile-nav-icon {
-  margin-top: 10px;
-}
-.sticky .mobile-nav-icon i {
-  color: #555;
-}
-
-h1 {
-  font-size: 180%;
-}
-h2 {
-  font-size: 150%;
-}
-
-.long-copy {
-  width: 100%;
-  margin-left: 0;
-}
-
-.mam {
-  margin: 0;
-}
-.mam img {
-  float: left;
-}
 /*Small Phones from 0 to 480px*/
 @media only screen and (max-width: 480px) {
   h1 {
@@ -133,5 +134,9 @@ h2 {
   }
   .section-team .long-copy {
     font-size: 1.5rem;
+  }
+
+  footer h3 {
+    font-size: 1.8rem;
   }
 }
