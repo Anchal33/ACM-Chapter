@@ -154,11 +154,12 @@ header {
   background-attachment: fixed;
 }
 .navbar{
-	padding: 0 1rem !important;
+	padding: 1rem 2rem !important;
 }
+
 .logo {
   float: left;
-  height: 50px;
+  height: 60px;
   width: auto;
 }
 .nav-item a {
@@ -167,6 +168,11 @@ header {
   font-weight: 300;
   margin: 0px 5px;
   letter-spacing: 3px;
+}
+.collapse{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
 }
 .nav-item a::after {
   content: "";
@@ -193,7 +199,9 @@ span.navbar-toggler-icon {
 .navbar button {
   outline: none;
 }
-
+.heading{
+  font-size: 250%;
+}
 .hero-text-box {
   position: absolute;
   top: 50%;
@@ -208,6 +216,7 @@ span.navbar-toggler-icon {
   position: fixed;
   top: 0;
   left: 0;
+  padding: 0 2rem !important;
   width: 100%;
   background-color: rgba(255, 255, 255, 0.95);
   box-shadow: 0 2px 2px #f0f0f0;
@@ -224,6 +233,7 @@ span.navbar-toggler-icon {
 }
 .sticky i.fa {
   color: #5d8ddc;
+}
 }
 
 /*-------------------------------*/
@@ -265,7 +275,16 @@ span.navbar-toggler-icon {
   transform: scale(1.03);
   opacity: 1;
 }
-
+.mobile-team{
+  display: none;
+}
+.teamImg div{
+  text-align: center;
+}
+.teamImg div img{
+ height: 400px;
+}
+/***EVENTS***/
 .section-events {
   background-color: #5d8ddc;
   color: #fff;

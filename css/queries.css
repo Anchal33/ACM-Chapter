@@ -13,7 +13,15 @@
   section {
     padding: 60px 0;
   }
-
+   .nav-item a::after{
+     display: none;
+   }
+    .nav-item a:hover{
+     color: #5d93dc;
+   }
+   .sticky .nav-item a:hover{
+     color:blue;
+   }
   .long-copy {
     width: 80%;
     margin-left: 10%;
@@ -36,7 +44,9 @@
     padding: 0 4%;
   }
 }
-
+.heading{
+  font-size: 200%;
+}
 .main-nav {
   display: none;
 }
@@ -96,6 +106,9 @@ h2 {
   width: 100%;
   margin-left: 0;
 }
+.section-team .long-copy{
+  margin-left:30%;
+}
 
 .mam {
   margin: 0;
@@ -108,6 +121,7 @@ h2 {
   h1 {
     font-size: 150%;
   }
+}
   h2 {
     font-size: 120%;
   }
