@@ -46,3 +46,35 @@ $(document).ready(function () {
     $(".past h3").removeClass("borderdown");
   });
 });
+
+
+//Events counter
+const counters = document.querySelectorAll('.counter');
+
+counters.forEach(function(counter){
+  var observer = new IntersectionObserver(function(entries) {
+    // isIntersecting is true when element and viewport are overlapping
+    // isIntersecting is false when element and viewport don't overlap
+    if(entries[0].isIntersecting === true)
+     {
+       
+      const updateCount = () =>{
+                const target = +counter.getAttribute('data-target');
+                const count = +counter.innerText;
+                const inc = 2 ;
+            
+                if(count < target){
+                  counter.innerText = count + inc;
+                  setTimeout(updateCount, 20);
+                }
+                else{
+                  count.innerText = target;
+                }
+              }
+              updateCount();
+            
+            }
+  }, { threshold: [0.10] });
+  
+  observer.observe(counter);
+});
