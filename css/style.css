@@ -317,13 +317,17 @@ span.navbar-toggler-icon {
   cursor: pointer;
 }
 .event h3 {
-  margin-left: 20px;
-  padding-left: 70px;
+  width: 100%;
+  text-align: center;
 }
-.borderdown {
-  padding-bottom: 20px;
-  width: 300px;
-  border-bottom: 2px solid #5d8ddc;
+.borderdown::after {
+  content: "";
+  margin: 0 auto;
+  margin-top: 20px;
+  display: block;
+  height: 2px;
+  width: 80%;
+  background: #5d8ddc;
 }
 
 .mam img {
