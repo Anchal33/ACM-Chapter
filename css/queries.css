@@ -107,7 +107,7 @@ h2 {
   margin-left: 0;
 }
 .section-team .long-copy{
-  margin-left:30%;
+  margin-left:35%;
 }
 
 .mam {
@@ -124,6 +124,12 @@ h2 {
 }
   h2 {
     font-size: 120%;
+  }
+  .desktop-team{
+    display: none;
+  }
+  .mobile-team{
+    display: block;
   }
   section {
     padding: 25px 0;

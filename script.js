@@ -57,12 +57,12 @@ counters.forEach(function(counter){
     // isIntersecting is false when element and viewport don't overlap
     if(entries[0].isIntersecting === true)
      {
-       
+
       const updateCount = () =>{
                 const target = +counter.getAttribute('data-target');
                 const count = +counter.innerText;
                 const inc = 2 ;
-            
+
                 if(count < target){
                   counter.innerText = count + inc;
                   setTimeout(updateCount, 20);
@@ -72,9 +72,25 @@ counters.forEach(function(counter){
                 }
               }
               updateCount();
-            
+
             }
   }, { threshold: [0.10] });
-  
+
   observer.observe(counter);
+
+
+  //Office Bearer mobile view
+  function myFunction(x) {
+  if (x.matches) { // If media query matches
+    document.getElementsByClassName("desktop-team")[0].style.display ="none";
+    document.getElementsByClassName("mobile-team")[0].style.display ="block";
+  } else {
+    document.getElementsByClassName("mobile-team")[0].style.display ="none";
+    document.getElementsByClassName("desktop-team")[0].style.display ="block";
+  }
+}
+
+var x = window.matchMedia("(max-width: 700px)")
+myFunction(x) // Call listener function at run time
+x.addListener(myFunction)
 });
