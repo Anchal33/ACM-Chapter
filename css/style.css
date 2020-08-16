@@ -154,12 +154,13 @@ header {
 }
 .logo {
 	float: left;
-	height: 100px;
+	height: 70px;
 	width: auto;
 }
 .nav-item a{
 	color: white;
 	font-weight: 550;
+	margin: 0px 5px;
 }
 .nav-item a:hover{
 	border-bottom: 2px solid #5d8ddc;
@@ -170,9 +171,7 @@ i.fa{
 span.navbar-toggler-icon {
 	padding: 3px;
 }
-a:active {
-	border-bottom: 2px solid #5d8ddc;
-}
+
 .navbar button{
 	outline: none;
 }
