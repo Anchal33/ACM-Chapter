@@ -153,14 +153,17 @@ header {
   height: 100vh;
   background-attachment: fixed;
 }
+.navbar{
+	padding: 0 1rem !important;
+}
 .logo {
   float: left;
-  height: 70px;
+  height: 50px;
   width: auto;
 }
 .nav-item a {
   color: white;
-  font-size: 1.25rem;
+  font-size: 1rem;
   font-weight: 300;
   margin: 0px 5px;
   letter-spacing: 3px;
@@ -212,7 +215,7 @@ span.navbar-toggler-icon {
 }
 .sticky .logo {
   float: left;
-  height: 70px;
+  height: 50px;
   width: auto;
 }
 .sticky .nav-item a {
