@@ -13,15 +13,15 @@
   section {
     padding: 60px 0;
   }
-   .nav-item a::after{
-     display: none;
-   }
-    .nav-item a:hover{
-     color: #5d93dc;
-   }
-   .sticky .nav-item a:hover{
-     color:blue;
-   }
+  .nav-item a::after {
+    display: none;
+  }
+  .nav-item a:hover {
+    color: #5d93dc;
+  }
+  .sticky .nav-item a:hover {
+    color: blue;
+  }
   .long-copy {
     width: 80%;
     margin-left: 10%;
@@ -44,7 +44,8 @@
     padding: 0 4%;
   }
 }
-.heading{
+
+.heading {
   font-size: 200%;
 }
 .main-nav {
@@ -106,9 +107,6 @@ h2 {
   width: 100%;
   margin-left: 0;
 }
-.section-team .long-copy{
-  margin-left:35%;
-}
 
 .mam {
   margin: 0;
@@ -121,17 +119,19 @@ h2 {
   h1 {
     font-size: 150%;
   }
-}
   h2 {
     font-size: 120%;
   }
-  .desktop-team{
+  .desktop-team {
     display: none;
   }
-  .mobile-team{
+  .mobile-team {
     display: block;
   }
   section {
     padding: 25px 0;
+  }
+  .section-team .long-copy {
+    font-size: 1.5rem;
   }
 }
