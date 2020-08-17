@@ -62,6 +62,8 @@ h1 {
 h2 {
   font-size: 180%;
   word-spacing: 2px;
+  width: 100%;
+  text-align: center;
   margin: 0 auto;
   margin-bottom: 30px;
   letter-spacing: 1px;
@@ -84,7 +86,8 @@ h2::after {
 .long-copy {
   line-height: 145%;
   width: 70%;
-  margin-left: 15%;
+  text-align: center;
+  margin: 0 auto;
   margin-bottom: 30px;
 }
 
