@@ -6,6 +6,7 @@
     <title>ACM STUDENT CHAPTER</title>
 
     <!-- CDNs -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
     <link
       rel="stylesheet"
@@ -414,6 +415,54 @@
         </div>
       </div>
     </section>
+
+  <!-- Swiper -->
+  <div class="container">
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide" style="background-image:url(css/images/1.jpg)"></div>
+        <div class="swiper-slide" style="background-image:url(css/images/2.jpg)"></div>
+        <div class="swiper-slide" style="background-image:url(css/images/3.jpg)"></div>
+        <div class="swiper-slide" style="background-image:url(css/images/4.jpg)"></div>
+        <div class="swiper-slide" style="background-image:url(css/images/5.jpg)"></div>
+        <div class="swiper-slide" style="background-image:url(css/images/6.jpg)"></div>
+        <div class="swiper-slide" style="background-image:url(css/images/7.jpg)"></div>
+        <div class="swiper-slide" style="background-image:url(css/images/8.jpg)"></div>
+        <div class="swiper-slide" style="background-image:url(css/images/9.jpg)"></div>
+        <div class="swiper-slide" style="background-image:url(css/images/10.jpg)"></div>
+        <div class="swiper-slide" style="background-image:url(css/images/11.jpg)"></div>
+        <div class="swiper-slide" style="background-image:url(css/images/12.jpg)"></div>
+      </div>
+      <!-- Add Pagination -->
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+ 
+
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      effect: 'coverflow',
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: 'auto',
+      coverflowEffect: {
+        rotate: 20,
+        stretch: 0,
+        depth: 200,
+        modifier: 1,
+        slideShadows: true,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+      },
+    });
+  </script>
+
+
     <footer id="footer">
       <div class="row">
         <h3>CONNECT SOCIALLY</h3>
@@ -444,7 +493,7 @@
 
     <!-- Internal script -->
     <script src="script.js" charset="utf-8" defer></script>
-
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <!-- Font awesome cdn -->
     <script src="https://use.fontawesome.com/8c064db0ff.js"></script>
 
