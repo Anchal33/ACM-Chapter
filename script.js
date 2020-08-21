@@ -74,22 +74,4 @@ counters.forEach(function (counter) {
     { threshold: [0.1] }
   );
 
-  observer.observe(counter);
-
-  //Office Bearer mobile view
-  function myFunction(x) {
-    if (x.matches) {
-      // If media query matches
-      document.getElementsByClassName("desktop-team")[0].style.display = "none";
-      document.getElementsByClassName("mobile-team")[0].style.display = "block";
-    } else {
-      document.getElementsByClassName("mobile-team")[0].style.display = "none";
-      document.getElementsByClassName("desktop-team")[0].style.display =
-        "block";
-    }
-  }
-
-  var x = window.matchMedia("(max-width: 700px)");
-  myFunction(x); // Call listener function at run time
-  x.addListener(myFunction);
-});
+  observer.observe(counter)});
