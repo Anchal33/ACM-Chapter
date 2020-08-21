@@ -41,8 +41,17 @@ section {
 
 .box {
   padding: 1%;
+  border-right: 2px solid lightblue;
 }
-
+.box > i {
+  text-align: center;
+}
+.box > h3 {
+  text-align: center;
+}
+.box > p {
+  padding:3px;
+}
 /*----HEADINGS----*/
 h1,
 h2,
