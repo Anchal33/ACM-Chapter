@@ -444,4 +444,70 @@ footer p {
   margin-left: 30px;
   box-shadow: 5px 5px 20px rgba(0,0,0,.3);
 }
+/*Faculty*/
 
+		#faculty{
+			display: flex;
+			justify-content: center;
+			flex-direction: column;
+			transition:  0.6s;
+		}
+		.faculty_card{
+			height: 400px;
+			width: 400px;
+			margin: 20px auto;
+			position: relative;
+			background-image: linear-gradient(#3ba0fc90,#3ba0fc90), url(images/faculty.jpeg);
+			background-position:  center center;
+			background-size: cover;
+			color: #fff;
+		}
+		@media (min-width:1040px){
+			#faculty{
+				flex-direction: row;
+			}
+			.faculty_card{
+				margin:20px;
+			}
+		}
+		@media (min-width:1400px){
+			.faculty_card{
+				height: 500px;
+				width: 500px;
+			}
+		}
+		.faculty_name{
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%,-50%);
+		}
+		.faculty_name h1{
+			font-size: 35px;
+			border-top: 2px solid #fff;
+			border-bottom: 2px solid #fff;
+		}
+		.faculty_desig{
+			display: block;
+			text-align: center;
+			width: 100%;
+			position: absolute;
+			bottom: 0;
+			left: 50%;
+			transform: translateX(-50%);
+			background: #3ba0fc;
+			padding: 10px;
+			opacity: 0;
+		}
+        .faculty_desig h3{
+	        margin: 5px;
+        }
+		.faculty_card:hover{
+			background-image: url(images/faculty.jpeg);
+		}
+		.faculty_card:hover .faculty_name{
+			opacity: 0;
+		}
+		.faculty_card:hover .faculty_desig{
+			opacity: 1;
+		}
