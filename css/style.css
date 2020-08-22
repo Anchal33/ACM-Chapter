@@ -450,7 +450,6 @@ footer p {
 			display: flex;
 			justify-content: center;
 			flex-direction: column;
-			transition:  0.6s;
 		}
 		.faculty_card{
 			height: 400px;
@@ -461,6 +460,7 @@ footer p {
 			background-position:  center center;
 			background-size: cover;
 			color: #fff;
+			
 		}
 		@media (min-width:1040px){
 			#faculty{
@@ -481,6 +481,7 @@ footer p {
 			top: 50%;
 			left: 50%;
 			transform: translate(-50%,-50%);
+			transition: opacity 0.6s;
 		}
 		.faculty_name h1{
 			font-size: 35px;
@@ -498,6 +499,7 @@ footer p {
 			background: #3ba0fc;
 			padding: 10px;
 			opacity: 0;
+			transition: opacity 0.6s;
 		}
         .faculty_desig h3{
 	        margin: 5px;
