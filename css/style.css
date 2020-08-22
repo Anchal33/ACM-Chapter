@@ -470,12 +470,7 @@ footer p {
 				margin:20px;
 			}
 		}
-		@media (min-width:1400px){
-			.faculty_card{
-				height: 500px;
-				width: 500px;
-			}
-		}
+		
 		.faculty_name{
 			position: absolute;
 			top: 50%;
@@ -484,7 +479,7 @@ footer p {
 			transition: opacity 0.6s;
 		}
 		.faculty_name h1{
-			font-size: 35px;
+			font-size: 30px;
 			border-top: 2px solid #fff;
 			border-bottom: 2px solid #fff;
 		}
