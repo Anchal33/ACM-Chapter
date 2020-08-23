@@ -114,7 +114,9 @@ h2::after {
 }
 
 /*----BUTTONS----*/
-
+.btn{
+  margin-bottom: 10px;
+}
 .btn:link,
 .btn:visited,
 input[type="submit"] {
@@ -167,6 +169,8 @@ header {
 }
 .navbar {
   padding: 1rem 2rem !important;
+  transition: .3s ease;
+  z-index: 99999;
 }
 
 .logo {
@@ -231,7 +235,7 @@ span.navbar-toggler-icon {
   left: 0;
   padding: 0 2rem !important;
   width: 100%;
-  background-color: rgba(255, 255, 255, 0.95);
+  background-color: rgba(255, 255, 255, 0.95) !important;
   box-shadow: 0 2px 2px #f0f0f0;
   z-index: 9999;
 }
