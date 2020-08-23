@@ -51,7 +51,7 @@ section {
   text-align: center;
 }
 .box > p {
-  padding:3px;
+  padding: 3px;
 }
 /*----HEADINGS----*/
 h1,
@@ -115,7 +115,7 @@ h2::after {
 }
 
 /*----BUTTONS----*/
-.btn{
+.btn {
   margin-bottom: 10px;
 }
 .btn:link,
@@ -170,7 +170,7 @@ header {
 }
 .navbar {
   padding: 1rem 2rem !important;
-  transition: .3s ease;
+  transition: 0.3s ease;
   z-index: 99999;
 }
 
@@ -338,13 +338,16 @@ span.navbar-toggler-icon {
   width: 100%;
   text-align: center;
 }
+.our-event {
+  margin-bottom: 50px;
+}
 .borderdown::after {
   content: "";
   margin: 0 auto;
   margin-top: 20px;
   display: block;
   height: 2px;
-  width: 80%;
+  width: 50%;
   background: #5d8ddc;
 }
 
@@ -362,10 +365,10 @@ span.navbar-toggler-icon {
   height: 250px;
   margin-top: 20px;
 }
-.slider-icon{
-  color: black !important; 
+.slider-icon {
+  color: black !important;
 }
-.past .d-block{
+.past .d-block {
   background-color: skyblue;
 }
 .hide {
@@ -383,7 +386,6 @@ footer {
   padding-top: 30px;
   font-size: 80%;
   text-align: center;
-  
 }
 
 .social-links {
@@ -433,9 +435,6 @@ footer p {
   margin: 20px auto;
 }
 
-
-
-
 .swiper-container {
   width: 100%;
   padding-top: 50px;
@@ -443,114 +442,109 @@ footer p {
 }
 
 .swiper-slide {
- 
   width: 300px;
   height: 300px;
   margin-right: 20px;
   margin-left: 20px;
-  box-shadow: 5px 5px 20px rgba(0,0,0,.3);
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3);
   position: relative;
 }
-.background-container{
+.background-container {
   width: 100%;
   height: 100%;
   background-position: center;
   background-size: 110%;
-  transition: all .5s;
+  transition: all 0.5s;
 }
-.name-container{
+.name-container {
   width: 100%;
   height: 100%;
   position: absolute;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   left: 50%;
-  top:50%;
+  top: 50%;
   text-align: center;
 }
-.name-container h2{
+.name-container h2 {
   display: none;
   color: white;
   position: absolute;
-  transform: translate(-50%,-50%);
-  left:50%;
-  top:55%;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 55%;
 }
-
-
 
 /*Faculty*/
 
-		#faculty{
-			display: flex;
-			justify-content: center;
-			flex-direction: column;
-		}
-		.faculty_card{
-			height: 400px;
-			width: 400px;
-			margin: 20px auto;
-			position: relative;
-			background-image: linear-gradient(#3ba0fc90,#3ba0fc90), url(images/faculty.jpeg);
-			background-position:  center center;
-			background-size: cover;
-			color: #fff;
-			
-		}
-		@media (min-width:1040px){
-			#faculty{
-				flex-direction: row;
-			}
-			.faculty_card{
-				margin:20px;
-			}
-		}
-		
-		.faculty_name{
-			position: absolute;
-			top: 50%;
-			left: 50%;
-			transform: translate(-50%,-50%);
-			transition: opacity 0.6s;
-		}
-		.faculty_name h1{
-			font-size: 30px;
-			border-top: 2px solid #fff;
-			border-bottom: 2px solid #fff;
-		}
-		.faculty_desig{
-			display: block;
-			text-align: center;
-			width: 100%;
-			position: absolute;
-			bottom: 0;
-			left: 50%;
-			transform: translateX(-50%);
-			background: #3ba0fc;
-			padding: 10px;
-			opacity: 0;
-			transition: opacity 0.6s;
-		}
-        .faculty_desig h3{
-	        margin: 5px;
-        }
-		.faculty_card:hover{
-			background-image: url(images/faculty.jpeg);
-		}
-		.faculty_card:hover .faculty_name{
-			opacity: 0;
-		}
-		.faculty_card:hover .faculty_desig{
-			opacity: 1;
-    }
-    
-.quote{
+#faculty {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.faculty_card {
+  height: 400px;
+  width: 400px;
+  margin: 20px auto;
+  position: relative;
+  background-image: linear-gradient(#3ba0fc90, #3ba0fc90),
+    url(images/faculty.jpeg);
+  background-position: center center;
+  background-size: cover;
+  color: #fff;
+}
+@media (min-width: 1040px) {
+  #faculty {
+    flex-direction: row;
+  }
+  .faculty_card {
+    margin: 20px;
+  }
+}
+
+.faculty_name {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.6s;
+}
+.faculty_name h1 {
   font-size: 30px;
-  color:black;
+  border-top: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+}
+.faculty_desig {
+  display: block;
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #3ba0fc;
+  padding: 10px;
+  opacity: 0;
+  transition: opacity 0.6s;
+}
+.faculty_desig h3 {
+  margin: 5px;
+}
+.faculty_card:hover {
+  background-image: url(images/faculty.jpeg);
+}
+.faculty_card:hover .faculty_name {
+  opacity: 0;
+}
+.faculty_card:hover .faculty_desig {
+  opacity: 1;
+}
+
+.quote {
+  font-size: 30px;
+  color: black;
   font-weight: 500;
   width: 600px;
   padding-bottom: 15px;
   border-bottom: 1px solid rgb(100, 93, 93);
   text-align: center;
 }
-
-    
