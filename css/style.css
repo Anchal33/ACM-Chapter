@@ -74,7 +74,7 @@ h2 {
   width: 100%;
   text-align: center;
   margin: 0 auto;
-  margin-bottom: 30px;
+  margin-bottom: 60px;
   letter-spacing: 1px;
 }
 h3 {
@@ -119,7 +119,7 @@ h2::after {
 .btn:visited,
 input[type="submit"] {
   display: inline-block;
-  padding: 10px 30px;
+  padding: 10px 25px;
   border-radius: 200px;
   font-weight: 300;
   text-decoration: none;
@@ -213,6 +213,7 @@ span.navbar-toggler-icon {
 }
 .heading {
   font-size: 250%;
+  font-weight: 350;
 }
 .hero-text-box {
   position: absolute;
