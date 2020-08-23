@@ -375,9 +375,10 @@ span.navbar-toggler-icon {
 
 footer {
   background-color: #333;
-  padding-top: 50px;
+  padding-top: 30px;
   font-size: 80%;
   text-align: center;
+  
 }
 
 .social-links {
@@ -508,4 +509,16 @@ footer p {
 		}
 		.faculty_card:hover .faculty_desig{
 			opacity: 1;
-		}
+    }
+    
+.quote{
+  font-size: 30px;
+  color:black;
+  font-weight: 500;
+width: 600px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid rgb(100, 93, 93);
+  text-align: center;
+}
+
+    
