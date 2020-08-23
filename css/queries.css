@@ -122,6 +122,31 @@
   .mam img {
     float: left;
   }
+  .swiper-slide-active .name-container{
+    height: 60px;
+    top: 90%;
+    background-image: linear-gradient(to top ,rgba(93 141 220) 0%,rgba(93 141 220) 10%, transparent);
+  }
+  .swiper-slide-active .name-container h2{
+   display: block;
+   border:none;
+   outline: none;
+   top: 55%;
+  }
+  .swiper-slide-active .name-container h2::after{
+   display: none;
+  }
+}
+
+
+@media only screen and (min-width: 768px){
+  .swiper-slide-active:hover .name-container h2{
+    display: block;
+  }
+  .swiper-slide-active:hover .background-container{
+    background-size: 100%;
+    filter: blur(3px) brightness(80%);
+  }
 }
 
 /*Small Phones from 0 to 480px*/
