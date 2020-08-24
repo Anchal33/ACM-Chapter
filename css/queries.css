@@ -136,6 +136,10 @@
   .swiper-slide-active .name-container h2::after{
    display: none;
   }
+   footer h3 {
+    font-size: 1.4rem;
+  }
+   
 }
 
 
@@ -146,6 +150,9 @@
   .swiper-slide-active:hover .background-container{
     background-size: 100%;
     filter: blur(3px) brightness(80%);
+  }
+  footer h3 {
+    font-size: 1.6rem;
   }
 }
 
@@ -177,7 +184,8 @@
     padding-left: 5%;
   }
   footer h3 {
-    font-size: 1.8rem;
+    font-size: 1.2rem;
+    letter-spacing: 4px;
   }
   .quote{
     width: 85%;
