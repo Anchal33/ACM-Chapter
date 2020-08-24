@@ -1,3 +1,3 @@
 ##ACM CHAPTER
 
-Offcial website of ACM STUDENT CHAPTER at Chitkara University.
+Official website of ACM STUDENT CHAPTER at Chitkara University.
