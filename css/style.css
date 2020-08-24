@@ -186,6 +186,7 @@ header {
   margin: 0px 5px;
   letter-spacing: 3px;
 }
+
 .collapse {
   display: flex;
   flex-wrap: wrap;
@@ -486,7 +487,7 @@ footer p {
   width: 400px;
   margin: 20px auto;
   position: relative;
-  background-image: linear-gradient(#3ba0fc90, #3ba0fc90),
+  background-image:
     url(images/faculty.jpeg);
   background-position: center center;
   background-size: cover;
@@ -531,6 +532,7 @@ footer p {
 }
 .faculty_card:hover {
   background-image: url(images/faculty.jpeg);
+  border-radius: 50px;
 }
 .faculty_card:hover .faculty_name {
   opacity: 0;
