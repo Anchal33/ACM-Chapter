@@ -192,7 +192,7 @@ header {
   flex-wrap: wrap;
   align-items: center;
 }
-.nav-item a::after {
+/* .nav-item a::after {
   content: "";
   display: block;
   width: 0;
@@ -201,11 +201,9 @@ header {
   margin-top: 4px;
   opacity: 0;
   background: #5d8ddc;
-}
-.nav-item a:hover::after {
-  opacity: 1;
-  width: 100%;
-  transition: 0.5s ease-out;
+} */
+.nav-item a:hover {
+  color:#5d8ddc;
 }
 i.fa {
   color: white;
@@ -237,8 +235,11 @@ span.navbar-toggler-icon {
   left: 0;
   padding: 0 2rem !important;
   width: 100%;
-  background-color: rgba(255, 255, 255, 0.95) !important;
-  box-shadow: 0 2px 2px #f0f0f0;
+  /* background-color: rgba(255, 255, 255, 0.95) !important;  */
+    background-image: linear-gradient(90deg, #87ABE5ff, #82A8E4ff, #80A6E4ff, #78A0E2ff, #759EE1ff,
+   #729CE1ff, #6A96DFff, #6895DEff, #6593DEff, #6291DDff, #608FDDff, #5D8DDCff) !important;
+
+  box-shadow: 0 1px 3px #f0f0f0;
   z-index: 9999;
 }
 .sticky .logo {
@@ -247,11 +248,14 @@ span.navbar-toggler-icon {
   width: auto;
 }
 .sticky .nav-item a {
-  color: #5d8ddc;
-  font-weight: 550;
+  /* color: #5d8ddc; */
+  font-weight: 350;
 }
 .sticky i.fa {
   color: #5d8ddc;
+}
+.sticky .nav-item a:hover {
+  color:black;
 }
 
 /*-------------------------------*/
