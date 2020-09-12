@@ -568,3 +568,55 @@ footer p {
 	background: #1c0b9f;
 	}
 }
+.facultyResult {
+  display: flex;
+  position: relative;
+  margin: 20px;
+  padding: 20px;
+  border-bottom: 1px solid lightblue;
+  cursor: pointer;
+  justify-content: space-between;
+}
+
+.facultyResult:hover {
+  opacity: 0.8;
+}
+
+.facultyResult > img {
+  height: 300px;
+  width: 300px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.faculty__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.facultyResult1 {
+  display: flex;
+  margin: 20px;
+  padding: 20px;
+  border-bottom: 1px solid lightblue;
+  cursor: pointer;
+  justify-content: space-between;
+}
+
+.facultyResult1:hover {
+  opacity: 0.8;
+}
+
+.facultyResult1 > img {
+  height: 300px;
+  width: 300px;
+  border-radius: 10px;
+  overflow: hidden;
+  right: 0;
+}
+
+.faculty__info1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
