@@ -480,8 +480,37 @@ footer p {
 }
 
 /*Faculty*/
-
-#faculty {
+.faculty{
+  margin: 10px 0px;
+}
+.faculty div img{
+  width: 100%;
+  box-shadow: 0px 0px 6px .1px;
+  border-radius: 50%;
+}
+.faculty-details{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 10px 0;
+}
+.faculty-details *{
+  margin: 2px 0;
+}
+.faculty-name{
+  font-size: 1.5em;
+  font-weight: 600;
+}
+.faculty-intro{
+  font-size: 1em;
+  font-weight: 300;
+}
+.faculty-hr{
+  border: 0px;
+  border-top:1px solid #5d8ddc;
+}
+/* #faculty {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -543,7 +572,7 @@ footer p {
 }
 .faculty_card:hover .faculty_desig {
   opacity: 1;
-}
+} */
 
 .quote {
   font-size: 25px;
