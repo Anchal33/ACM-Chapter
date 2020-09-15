@@ -91,6 +91,10 @@
   .box{
     border-right: none;
   }
+  .box1
+  {
+    border-right: none;
+  }
   .event {
     width: 40%;
     margin-bottom: 5px;
@@ -217,6 +221,18 @@
     border-right: none;
   }
   .box > p {
+    padding: 3px;
+  }
+  .box1 > h3 {
+    text-align: center;
+  }
+  .box1 > i {
+    text-align: center;
+  }
+  .box1 {
+    border-right: none;
+  }
+  .box1 > p {
     padding: 3px;
   }
 }
