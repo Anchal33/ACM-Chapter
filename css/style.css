@@ -186,6 +186,8 @@ header {
   background-size: cover;
   height: 100vh;
   background-attachment: fixed;
+  border-bottom-right-radius: 125% 50%;
+	border-bottom-left-radius: 125% 50%;
 }
 .navbar {
   padding: 1rem 2rem !important;

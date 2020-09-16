@@ -24,7 +24,7 @@
 </head>
 
 <body>
-  <header>
+  <header >
     <nav class="navbar navbar-expand-lg">
       <a class="navbar-brand" href="#"><img class="logo" src="./css/images/acm.png" alt="" /></a>
 
@@ -460,6 +460,14 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
+    <script>
+		let obj=document.querySelector("header");
+		window.addEventListener('scroll',function(){
+			let value=window.scrollY;
+			obj.style.borderBottomLeftRadius=`${125-value/16}% ${50-value/8}%`;
+			obj.style.borderBottomRightRadius=`${125-value/16}% ${50-value/8}%`;
+		})
+	</script>
 </body>
 
 </html>
