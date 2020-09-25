@@ -35,6 +35,7 @@
         <label for="navi-toggle" class="navigation__button"><span class="navigation__icon">
             &nbsp;
           </span>
+		  </label>
       </button>
 
       <div class="collapse navbar-collapse flex-row-reverse" id="nav">
@@ -466,9 +467,14 @@
   <script>
             let obj = document.querySelector("header");
             window.addEventListener('scroll', function () {
-              let value = window.scrollY;
-              obj.style.borderBottomLeftRadius = `${125 - value / 16}% ${50 - value / 8}%`;
-              obj.style.borderBottomRightRadius = `${125 - value / 16}% ${50 - value / 8}%`;
+			if(window.innerWidth>=768){
+				let value = window.scrollY;
+              obj.style.borderBottomLeftRadius = `${125 - value / 16}% ${30 - value / 8}%`;
+              obj.style.borderBottomRightRadius = `${125 - value / 16}% ${30 - value / 8}%`;
+			}
+              else{
+				  obj.style.borderRadius="0%";
+			  }
     })
   </script>
 </body>
