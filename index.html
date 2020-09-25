@@ -24,14 +24,17 @@
 </head>
 
 <body>
-  <header >
+  <header>
     <nav class="navbar navbar-expand-lg">
       <a class="navbar-brand" href="#"><img class="logo" src="./css/images/acm.png" alt="" /></a>
 
       <!-- navbar toggler -->
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav" aria-controls="nav"
         aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"><i class="fa fa-bars fa-lg" aria-hidden="true"></i></span>
+        <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+        <label for="navi-toggle" class="navigation__button"><span class="navigation__icon">
+            &nbsp;
+          </span>
       </button>
 
       <div class="collapse navbar-collapse flex-row-reverse" id="nav">
@@ -420,21 +423,21 @@
       </ul>
     </div>
     <div class="info">
-    <table>
-      <thead>
-        <tr>
-          <td>
-            <a class="foot-links" href="#about">About Us</a>
-          </td>
-          <td>
-          <a class="foot-links" href="#events">Events</a>
-        </td>
-          <td>
-            <a class="foot-links" href="#team">Office Bearers</a>
-          </td>
-        
-        </tr>
-      </thead>
+      <table>
+        <thead>
+          <tr>
+            <td>
+              <a class="foot-links" href="#about">About Us</a>
+            </td>
+            <td>
+              <a class="foot-links" href="#events">Events</a>
+            </td>
+            <td>
+              <a class="foot-links" href="#team">Office Bearers</a>
+            </td>
+
+          </tr>
+        </thead>
       </table>
     </div>
     <div class="row">
@@ -460,14 +463,14 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
-    <script>
-		let obj=document.querySelector("header");
-		window.addEventListener('scroll',function(){
-			let value=window.scrollY;
-			obj.style.borderBottomLeftRadius=`${125-value/16}% ${50-value/8}%`;
-			obj.style.borderBottomRightRadius=`${125-value/16}% ${50-value/8}%`;
-		})
-	</script>
+  <script>
+            let obj = document.querySelector("header");
+            window.addEventListener('scroll', function () {
+              let value = window.scrollY;
+              obj.style.borderBottomLeftRadius = `${125 - value / 16}% ${50 - value / 8}%`;
+              obj.style.borderBottomRightRadius = `${125 - value / 16}% ${50 - value / 8}%`;
+    })
+  </script>
 </body>
 
 </html>
