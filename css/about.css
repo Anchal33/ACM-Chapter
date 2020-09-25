@@ -1,0 +1,41 @@
+main{
+    margin: 300px auto;
+}
+.about-container{
+    max-width: 1000px;
+}
+.main-head{
+    color: black;
+    margin-bottom: 60px;
+}
+.nav-link{
+    border:none !important;
+    padding: .5rem 2rem;
+    
+}
+.nav-link.active{
+    border-bottom: 3px solid #6190dd !important;
+}
+.tab-pane{
+    padding-top: 50px;
+}
+
+.tab-content>.active {
+    display: flex !important;
+    align-items: center;
+}
+.about-acm-text{
+    font-size: 18px;
+padding-right: 30px;
+}
+.about-acm-img-small{
+    width: 40%;
+}
+.about-acm-img-small-1{
+    margin-right: 10%;
+}
+.about-acm-img-large{
+    display: block;
+    margin: 0 auto;
+    margin-top: 30px;
+}
