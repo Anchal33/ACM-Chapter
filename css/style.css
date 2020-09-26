@@ -186,8 +186,6 @@ header {
   background-size: cover;
   height: 100vh;
   background-attachment: fixed;
-  border-bottom-right-radius: 125% 50%;
-	border-bottom-left-radius: 125% 50%;
 }
 .navbar {
   padding: 1rem 2rem !important;
@@ -664,22 +662,21 @@ footer p {
   border-bottom: 1px solid rgb(100, 93, 93);
   text-align: center;
 }
-@media (min-width:800px){
+@media (min-width:768px){
  ::-webkit-scrollbar {
 	width: 8px;
  }
 
  ::-webkit-scrollbar-track {
-	background: tranparent;
+	background: #bababa;
  }
 
  ::-webkit-scrollbar-thumb {
 	background: #5e8ddd;
-	border-radius: 5px;
  }
 
  ::-webkit-scrollbar-thumb:hover {
-	background: #1c0b9f;
+	background: #2e8dff;
 	}
 }
 .facultyResult {
