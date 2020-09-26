@@ -59,8 +59,8 @@
                 <div class="nav nav-tabs" id="nav-tab" role="tablist">
                     <a class="col-md-5 nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab"
                         aria-controls="nav-home" aria-selected="true">About ACM Chitkara</a>
-                    <a class="col-md-3 nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab"
-                        aria-controls="nav-profile" aria-selected="false">FAQ</a>
+                    <a class="col-md-3 nav-link" id="nav-faq-tab" data-toggle="tab" href="#nav-faq" role="tab" aria-controls="nav-faq"
+                        aria-selected="false">FAQ</a>
                     <a class="col-md-4 nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab"
                         aria-controls="nav-contact" aria-selected="false">Join ACM</a>
                 </div>
@@ -101,36 +101,57 @@
                         </div>
                     </div>
                 </div>
-                <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">Ad
-                    pariatur
-                    nostrud pariatur exercitation ipsum ipsum culpa mollit commodo mollit ex. Aute sunt incididunt amet
-                    commodo
-                    est sint nisi deserunt pariatur do. Aliquip ex eiusmod voluptate exercitation cillum id incididunt
-                    elit
-                    sunt. Qui minim sit magna Lorem id et dolore velit Lorem amet exercitation duis deserunt. Anim id
-                    labore
-                    elit adipisicing ut in id occaecat pariatur ut ullamco ea tempor duis.</div>
-                <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">Est quis
-                    nulla
-                    laborum officia ad nisi ex nostrud culpa Lorem excepteur aliquip dolor aliqua irure ex. Nulla ut
-                    duis
-                    ipsum
-                    nisi elit fugiat commodo sunt reprehenderit laborum veniam eu veniam. Eiusmod minim exercitation
-                    fugiat
-                    irure ex labore incididunt do fugiat commodo aliquip sit id deserunt reprehenderit aliquip nostrud.
-                    Amet
-                    ex
-                    cupidatat excepteur aute veniam incididunt mollit cupidatat esse irure officia elit do ipsum ullamco
-                    Lorem.
-                    Ullamco ut ad minim do mollit labore ipsum laboris ipsum commodo sunt tempor enim incididunt.
-                    Commodo
-                    quis
-                    sunt dolore aliquip aute tempor irure magna enim minim reprehenderit. Ullamco consectetur culpa
-                    veniam
-                    sint
-                    cillum aliqua incididunt velit ullamco sunt ullamco quis quis commodo voluptate. Mollit nulla
-                    nostrud
-                    adipisicing aliqua cupidatat aliqua pariatur mollit voluptate voluptate consequat non.</div>
+                <div class="tab-pane fade" id="nav-faq" role="tabpanel" aria-labelledby="nav-faq-tab">
+                    <div class="faq container">
+                        <div class="faq-question">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem id cumque
+                            ?
+                        </div>
+                        <div class="faq-answer"> Ad pariatur nostrud pariatur exercitation ipsum ipsum culpa mollit commodo mollit ex.
+                            Aute sunt incididunt amet commodo est sint nisi deserunt pariatur do. Aliquip ex eiusmod voluptate
+                            exercitation cillum id incididunt elit
+                        </div>
+                    </div>
+                
+                    <div class="faq container">
+                        <div class="faq-question">
+                            <ion-icon name="help-circle-outline" class="faq-question-icon"></ion-icon>
+                            <span class="faq-question-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem id cumque
+                                ?</span>
+                        </div>
+                        <div class="faq-answer"> Ad pariatur nostrud pariatur exercitation ipsum ipsum culpa mollit commodo mollit ex.
+                            Aute sunt incididunt amet commodo est sint nisi deserunt pariatur do. Aliquip ex eiusmod voluptate
+                            exercitation cillum id incididunt elit
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                    <div class="join-heading">
+                        <h3 class="join-heading-secondary">Why are you waiting ?</h3>
+                        <h2 class="join-heading-primary">Join ACM now !!</h2>
+                    </div>
+                    <div class="contact">
+                        <h2 class="contact-heading">Contact Us</h2>
+                        <form class="contact-form">
+                            <div class="form-group">
+                                <label class="form__label" for="contact-name">Name</label>
+                                <input type="name" class="form-control" id="contact-name" required>
+                
+                            </div>
+                            <div class="form-group">
+                                <label class="form__label" for="contact-email">Email address</label>
+                                <input type="email" class="form-control" id="contact-email" aria-describedby="emailHelp" required>
+                                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                                    else.</small>
+                            </div>
+                            <div class="form-group">
+                                <label class="form__label" for="contact-textarea">Queries</label>
+                                <textarea class="form-control" id="contact-textarea" rows="3" required></textarea>
+                            </div>
+                            <button type="submit" class="contact-button">Submit</button>
+                        </form>
+                    </div>
+                </div>
             </div>
 
         </div>
