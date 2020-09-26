@@ -283,23 +283,6 @@ span.navbar-toggler-icon {
   position: relative;
 }
 
-.navigation__checkbox {
-  display: none; 
-}
-
-.navigation__button {
-  height: 60px;
-  width: 60px;
-  border-radius: 50%;
-  position: absolute;
-  top: -25px;
-  right:-35px;
-  z-index: 1000;
-  
-  text-align: center;
-  cursor: pointer; 
-}
-  
 .navigation__icon {
   position: absolute;
   top: 50%;
@@ -329,29 +312,29 @@ span.navbar-toggler-icon {
   top: 8px; 
 }
 
-.navigation__button:hover .navigation__icon{
+.navbar-toggler:hover .navigation__icon{
     background-color: rgb(240, 240, 240);
   }
-.navigation__button:hover .navigation__icon:before {
+.navbar-toggler:hover .navigation__icon:before {
   background-color: rgb(240, 240, 240); 
 }
  
 
-.navigation__button:hover .navigation__icon:after {
+.navbar-toggler:hover .navigation__icon:after {
   background-color: rgb(240, 240, 240); 
 }
 
 
-.navigation__checkbox:checked + .navigation__button .navigation__icon {
-  background-color: transparent; 
+.navigation__icon.active {
+  background-color: transparent !important;
 }
 
-.navigation__checkbox:checked + .navigation__button .navigation__icon::before {
+.navigation__icon.active::before {
   transform: rotate(135deg);
   top: 0; 
 }
 
-.navigation__checkbox:checked + .navigation__button .navigation__icon::after {
+.navigation__icon.active::after {
   transform: rotate(-135deg);
   top: 0; 
 }

@@ -79,6 +79,9 @@ counters.forEach(function (counter) {
   const toggelButton = document.querySelector('button');
 
 toggelButton.addEventListener("click",()=>{
+
+  document.querySelector('.navigation__icon').classList.toggle('active');
+
   const nav = document.querySelector('nav');
   if(toggelButton.getAttribute('aria-expanded') == "false"){
     const nav = document.querySelector('nav');
