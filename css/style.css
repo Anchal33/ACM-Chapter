@@ -742,12 +742,7 @@ table {
   margin: 10px 30px 0px;
  
 }
-tr td,
-tr th {
-  padding: 0 15px;
-  border-right: 1px solid blanchedalmond;
-  
-}
+
 table,
 table th {
   text-align: left;
@@ -755,4 +750,11 @@ table th {
 .foot-links
 {
   color: #8ecee6;
+  border-right: 1px solid blanchedalmond;
+  padding: 0 15px;
+}
+.foot-links1
+{
+  color: #8ecee6;
+  padding: 0 15px;
 }
