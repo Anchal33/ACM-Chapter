@@ -205,6 +205,14 @@
     margin:0 10%;
     font-size:120%;
   }
+  .foot-links
+  {
+  padding: 0 10px;
+  }
+  .foot-links1
+  {
+  padding: 0 10px;
+  }
 }
 @media only screen and (max-width: 500px) {
 
