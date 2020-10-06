@@ -1,0 +1,203 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  overflow-x: hidden;
+}
+.outer {
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+}
+.bottom {
+  position: absolute;
+  z-index: -1;
+
+  width: 100%;
+  height: 130%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(225, 238, 254);
+}
+.middle {
+  position: absolute;
+  z-index: 1;
+
+  height: 80%;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 2px 2px 10px rgba(49, 49, 49, 0.5),
+    -2px -2px 10px rgba(49, 49, 49, 0.5);
+  border-radius: 5px;
+  background-color: white;
+}
+.top {
+  position: absolute;
+  z-index: 2;
+  /* border: 1px solid black; */
+  height: 70%;
+  width: 80%;
+  box-shadow: 2px 2px 10px rgba(49, 49, 49, 0.5),
+    -2px -2px 10px rgba(49, 49, 49, 0.5);
+  border-radius: 5px;
+  background-color: white;
+  display: flex;
+  margin-top: 10%;
+}
+.left {
+  width: 60%;
+  height: 100%;
+  padding: 3%;
+}
+.right {
+  width: 40%;
+  height: 100%;
+  color: white;
+  padding: 3.5%;
+
+  background: linear-gradient(
+    to top right,
+    rgb(18, 165, 110),
+    rgb(57, 158, 38)
+  );
+}
+
+input {
+  width: 50%;
+}
+.top-poly {
+  background-color: rgb(122, 195, 168);
+  height: 300px;
+  width: 300px;
+  position: absolute;
+  z-index: -1;
+  right: 0;
+  top: 0;
+  clip-path: polygon(68% 0, 100% 0, 100% 100%, 64% 84%, 39% 41%);
+}
+.bottom-poly {
+  background-color: rgb(122, 195, 168);
+  height: 300px;
+  width: 300px;
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  bottom: 0;
+  clip-path: polygon(47% 9%, 0 0, 0 100%, 34% 100%, 63% 53%);
+}
+.upper {
+  width: 100%;
+  /* background-image: url("https://images.unsplash.com/photo-1531971097815-8d0a0d48f813?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; */
+  background: linear-gradient(
+    to right,
+    rgb(37, 151, 207),
+    rgb(104, 189, 223),
+    rgb(35, 192, 226)
+  );
+  height: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.upper h1 {
+  color: white;
+  font-size: 2 rem;
+  margin-bottom: 1%;
+  text-align: center;
+  margin-top: 2%;
+}
+.upper p {
+  text-align: center;
+  color: white;
+}
+.drop {
+  color: rgb(25, 140, 192);
+  padding: 2%;
+}
+.columns {
+  display: flex;
+}
+.left-column {
+  width: 48%;
+}
+.right-column {
+  width: 48%;
+}
+input,
+textarea {
+  width: 90%;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid rgb(124, 123, 123);
+  padding: 1%;
+  margin-bottom: 6%;
+  margin-left: 5%;
+}
+label {
+  margin: 2%;
+  margin-left: 5%;
+  color: rgb(124, 123, 123);
+}
+textarea {
+  width: 90%;
+  margin-left: 2%;
+}
+.btn {
+  box-shadow: 0px 10px 15px rgb(145, 219, 253);
+  background: linear-gradient(
+    to bottom right,
+    rgb(25, 140, 192),
+    rgb(99, 195, 240)
+  );
+  color: white;
+  border-radius: 40px;
+  padding: 2% 4%;
+}
+.btn:hover {
+  background: linear-gradient(
+    to bottom right,
+    rgb(99, 195, 240),
+    rgb(25, 140, 192)
+  );
+  color: white;
+}
+.icon {
+  color: rgb(70, 247, 70);
+}
+.right a {
+  color: white;
+  text-decoration: none;
+}
+.right p {
+  margin-bottom: 8%;
+}
+.fa-globe,
+.fa-phone,
+.fa-map-marker,
+.fa-envelope {
+  color: rgb(70, 247, 70);
+  margin-right: 7px;
+}
+.fa-phone {
+  transform: rotate(90deg);
+}
+.fa-facebook {
+  color: white;
+  position: absolute;
+  z-index: 1000;
+}
+.header {
+  font-size: 1.1rem;
+}
+/* #social i {
+  color: white;
+  margin: 2%;
+  /* background-color: black; */
