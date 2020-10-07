@@ -92,18 +92,45 @@
       </div>
     </div>
 
-    <script>
-      const scriptURL = 'https://script.google.com/macros/s/AKfycbxtDbsC7SbNnd0ISQ0Xf90T1mx4GVDsvY-bPa9KJjYPtCBxrvE/exec'
-      const form = document.forms['contact-form']
+    <div class="popup" id="popup">
+      <div class="popup__content ">
+         
+              <h2 class="heading-secondary u-margin-bottom-small">Thank You for contacting us.</h2>
+              <button type="button" class="btn btn-success">Success</button>
+          
 
-      form.addEventListener('submit', e => {
-        e.preventDefault()
-        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
-        .catch(error => console.error('Error!', error.message))
-      })
-    </script>
+      </div>
+  </div>
+
+
+   
+    
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbxtDbsC7SbNnd0ISQ0Xf90T1mx4GVDsvY-bPa9KJjYPtCBxrvE/exec'
+      const form = document.forms['contact-form'];
+    
+      $(".btn-success").click(function(){
+        $(".popup").removeClass("active");
+        $(".popup__content").removeClass("active");
+        location.reload(true);
+  });
+
+
+      form.addEventListener('submit', e => {
+        e.preventDefault();
+        console.log("h11");
+        $(".popup").addClass("active");
+        $(".popup__content").addClass("active");
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+       
+       
+      })
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
   </body>
 </html>

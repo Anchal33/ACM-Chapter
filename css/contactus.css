@@ -203,3 +203,41 @@ textarea {
   color: white;
   margin: 2%;
   /* background-color: black; */
+
+  .popup {
+    height: 100vh;
+    width: 100%;
+    z-index: 5000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0, 0.7);
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s;
+  }
+.popup.active{
+		opacity: 1;
+		visibility: visible;
+}
+  .popup__content{
+    text-align: center;
+    padding:50px 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+		width: 50%;
+		background-color: white;
+		box-shadow: 0 2rem 4rem rgba(0,0,0, 0.2);
+		border-radius: 3px;
+		opacity: 0;
+		transform: translate(-50%, -50%) scale(.35);
+		transition: all .4s .2s; 
+  }
+.popup__content.active{
+		opacity: 1;
+		transform: translate(-50%, -50%) scale(1);
+}
+.spinner-border{
+ margin-top: 30px;
+}
