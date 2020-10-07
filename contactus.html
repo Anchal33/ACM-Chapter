@@ -31,26 +31,28 @@
             </p>
           </div>
           <div class="top">
-            <div class="left">
-              <h6 class="drop">Drop a message</h6>
-              <div class="columns">
-                <div class="left-column">
-                  <label>Full Name</label><br />
-                  <input type="text" /><br />
-                  <label>Email</label><br />
-                  <input type="email" /><br />
+            <form method="POST" name="contact-form" class="contact-form">
+              <div class="left">
+                <h6 class="drop">Drop a message</h6>
+                <div class="columns">
+                  <div class="left-column">
+                   <label>Full Name</label><br />
+                    <input type="text" name="Name" /><br />
+                    <label>Email</label><br />
+                   <input type="email" name="Email"/><br />
+                  </div>
+                  <div class="right-column">
+                   <label>Phone</label><br />
+                   <input type="text" name="Phone"/><br />
+                   <label>Subject</label><br />
+                   <input type="text" name="Subject"/><br />
+                 </div>
                 </div>
-                <div class="right-column">
-                  <label>Phone</label><br />
-                  <input type="text" /><br />
-                  <label>Subject</label><br />
-                  <input type="text" /><br />
-                </div>
+               <label>Message</label><br />
+               <textarea rows="1" name="Query"></textarea><br />
+               <button class="btn">Send Message</button>
               </div>
-              <label>Message</label><br />
-              <textarea rows="1"></textarea><br />
-              <button class="btn">Send Message</button>
-            </div>
+            </form>
             <div class="right">
               <p class="header">
                 Contact
@@ -89,5 +91,19 @@
         <div class="bottom-poly"></div>
       </div>
     </div>
+
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbxtDbsC7SbNnd0ISQ0Xf90T1mx4GVDsvY-bPa9KJjYPtCBxrvE/exec'
+      const form = document.forms['contact-form']
+
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+        .catch(error => console.error('Error!', error.message))
+      })
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   </body>
 </html>

@@ -49,8 +49,10 @@ body {
   display: flex;
   margin-top: 10%;
 }
-.left {
+.contact-form{
   width: 60%;
+}
+.left {
   height: 100%;
   padding: 3%;
 }
