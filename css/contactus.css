@@ -47,7 +47,7 @@ body {
   border-radius: 5px;
   background-color: white;
   display: flex;
-  margin-top: 10%;
+  bottom: 40px;
 }
 .contact-form{
   width: 60%;
@@ -94,10 +94,7 @@ input {
 }
 .upper {
   width: 100%;
-  /* background-image: url("https://images.unsplash.com/photo-1531971097815-8d0a0d48f813?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center; */
+  padding: 10px 20px;
   background: linear-gradient(
     to right,
     rgb(37, 151, 207),
@@ -240,4 +237,36 @@ textarea {
 }
 .spinner-border{
  margin-top: 30px;
+}
+
+
+/* responsive */
+@media only screen and (max-width: 800px){
+  .middle{
+    width: 100%;
+  }
+  .top{
+    width: 90%;
+  }
+}
+@media screen and (max-width:600px){
+  .middle{
+    height: 100%;
+  }
+  .top{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    bottom: 0px;
+    text-align: center;
+    box-shadow: none;
+  }
+  label{
+    margin: 0px;
+  }
+  .left,.right,.contact-form{
+    width: 100%;
+    padding: 5%;
+    border-radius: 10px 10px 0 0;
+  }
 }
