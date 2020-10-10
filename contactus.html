@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
     <link
       rel="stylesheet"
@@ -13,21 +13,64 @@
       integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&family=Source+Sans+Pro&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/contactus.css" />
     <title>Contact us</title>
   </head>
   <body>
-    <div class="outer">
+    <nav class="navbar navbar-expand-lg sticky">
+        <a class="navbar-brand" href="#"><img class="logo" src="./css/images/acmCuiet.png" alt="" /></a>
+
+        <!-- navbar toggler -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav" aria-controls="nav"
+            aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navigation__icon">
+                    &nbsp;
+            
+        </button>
+
+        <div class="collapse navbar-collapse flex-row-reverse" id="nav">
+            <ul class="navbar-nav">
+                <li class="nav-item ">
+                    <a class="nav-link" href="#about">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#events">Events</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#team">Office Bearers</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contactus.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="outer" style="margin-top:4%;">
       <div class="bottom">
         <div class="top-poly"></div>
         <div class="middle">
           <div class="upper">
             <h1>GET IN TOUCH</h1>
             <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui
-              alias in laudantium nemo inventore illum tempore nulla natus
-              similique fugiat, voluptas nam facere fugit ratione dignissimos
-              impedit molestiae, hic minus.
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
             </p>
           </div>
           <div class="top">
@@ -36,29 +79,25 @@
                 <h6 class="drop">Drop a message</h6>
                 <div class="columns">
                   <div class="left-column">
-                   <label>Full Name</label><br />
+                    <label>Full Name</label><br />
                     <input type="text" name="Name" /><br />
                     <label>Email</label><br />
-                   <input type="email" name="Email"/><br />
+                    <input type="email" name="Email" /><br />
                   </div>
                   <div class="right-column">
-                   <label>Phone</label><br />
-                   <input type="text" name="Phone"/><br />
-                   <label>Subject</label><br />
-                   <input type="text" name="Subject"/><br />
-                 </div>
+                    <label>Phone</label><br />
+                    <input type="text" name="Phone" /><br />
+                    <label>Subject</label><br />
+                    <input type="text" name="Subject" /><br />
+                  </div>
                 </div>
-               <label>Message</label><br />
-               <textarea rows="1" name="Query"></textarea><br />
-               <button class="btn">Send Message</button>
+                <label>Message</label><br />
+                <textarea rows="1" name="Query"></textarea><br />
+                <button class="btn">Send Message</button>
               </div>
             </form>
             <div class="right">
-              <p class="header">
-                Contact
-                Information
-                LocationMap
-              </p>
+              <p class="header">Contact Information LocationMap</p>
               <p>
                 <i class="fa fa-map-marker" class="icon" aria-hidden="true"></i
                 >Lorem ipsum dolor sit amet consectetur adipisicing elit
@@ -91,46 +130,86 @@
         <div class="bottom-poly"></div>
       </div>
     </div>
-
-    <div class="popup" id="popup">
-      <div class="popup__content ">
-         
-              <h2 class="heading-secondary u-margin-bottom-small">Thank You for contacting us.</h2>
-              <button type="button" class="btn btn-success">Success</button>
-          
-
+    <div>
+      <div class="popup" id="popup">
+        <div class="popup__content">
+          <h2 class="heading-secondary u-margin-bottom-small">
+            Thank You for contacting us.
+          </h2>
+          <button type="button" class="btn btn-success">Success</button>
+        </div>
       </div>
-  </div>
+    </div>
+    <footer
+      class="foot"
+      id="footer"
+    >
+      <div class="row">
+        <h3 class="line">CONNECT SOCIALLY</h3>
 
-
-   
-    
-
+        <ul class="social-links">
+          <li>
+            <a href="#"> <i class="ion-social-facebook"></i> </a>
+          </li>
+          <li>
+            <a href="#"> <i class="ion-social-twitter"></i> </a>
+          </li>
+          <li>
+            <a href="#"> <i class="ion-social-googleplus"></i> </a>
+          </li>
+          <li>
+            <a href="#"> <i class="ion-social-instagram"></i> </a>
+          </li>
+        </ul>
+      </div>
+      <div class="info">
+        <table>
+          <thead>
+            <tr>
+              <td>
+                <a class="foot-links" href="#about">About Us</a>
+              </td>
+              <td>
+                <a class="foot-links" href="#events">Events</a>
+              </td>
+              <td>
+                <a class="foot-links1" href="#team">Office Bearers</a>
+              </td>
+            </tr>
+          </thead>
+        </table>
+      </div>
+      <div class="row">
+        <p>
+          Copyright &copy; 2020 by CHITKARA University. All rights reserved.
+        </p>
+      </div>
+    </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script>
-      const scriptURL = 'https://script.google.com/macros/s/AKfycbxtDbsC7SbNnd0ISQ0Xf90T1mx4GVDsvY-bPa9KJjYPtCBxrvE/exec'
-      const form = document.forms['contact-form'];
-    
-      $(".btn-success").click(function(){
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbxtDbsC7SbNnd0ISQ0Xf90T1mx4GVDsvY-bPa9KJjYPtCBxrvE/exec";
+      const form = document.forms["contact-form"];
+
+      $(".btn-success").click(function () {
         $(".popup").removeClass("active");
         $(".popup__content").removeClass("active");
         location.reload(true);
-  });
+      });
 
-
-      form.addEventListener('submit', e => {
+      form.addEventListener("submit", (e) => {
         e.preventDefault();
         console.log("h11");
         $(".popup").addClass("active");
         $(".popup__content").addClass("active");
-        e.preventDefault()
-        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-       
-       
-      })
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) });
+      });
     </script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-    crossorigin="anonymous"></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
