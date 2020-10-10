@@ -62,18 +62,20 @@ body {
   color: white;
   padding: 3.5%;
 
-  background: linear-gradient(
+  /* background: linear-gradient(
     to top right,
     rgb(18, 165, 110),
     rgb(57, 158, 38)
-  );
+  ); */
+  background-color: #457B9D;
 }
 
 input {
   width: 50%;
 }
 .top-poly {
-  background-color: rgb(122, 195, 168);
+  background-color: #77ABBD;
+  /* background-color: rgb(122, 195, 168); */
   height: 300px;
   width: 300px;
   position: absolute;
@@ -83,7 +85,8 @@ input {
   clip-path: polygon(68% 0, 100% 0, 100% 100%, 64% 84%, 39% 41%);
 }
 .bottom-poly {
-  background-color: rgb(122, 195, 168);
+  /* background-color: rgb(122, 195, 168); */
+  background-color: #77ABBD;
   height: 300px;
   width: 300px;
   position: absolute;
