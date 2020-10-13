@@ -358,6 +358,10 @@ html, body{
 .padding{
   padding-bottom: 2rem;
 }
+#slides {
+  margin-bottom: 20px;
+}
+
 /* Welcom text and cards overlay animation*/
 .welcome{
   width: 75%;
