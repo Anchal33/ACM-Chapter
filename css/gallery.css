@@ -261,22 +261,55 @@ figure {
 [class*="col-"] {
     padding: 1rem;
 }
-/*
-Extra small (xs) devices (portrait phones, less than 576px)
-No media query since this is the default in Bootstrap
 
-Small (sm) devices (landscape phones, 576px and up)
-@media (min-width: 576px) { ... }
+/* Small (sm) devices (landscape phones, 576px and up) */
+@media (min-width: 320px) {
+  .photos div{
+    height: 280px;
+    padding: 6px;
+    margin: 8px 20px;
+  }
+}
+@media (min-width: 375px) {
+  .photos div{
+    height: 300px;
+    padding: 8px;
+    margin: 8px 30px;
+  }
 
-Medium (md) devices (tablets, 768px and up)
-@media (min-width: 768px) { ... }
+}
+@media (min-width: 426px) {
+  .photos div{
+    height: 250px;
+    width: 250px;
+    padding: 6px;
+    margin: 10px;
+  }
 
-Large (lg) devices (desktops, 992px and up)
-@media (min-width: 992px) { ... }
+}
+/* Medium (md) devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .photos div{
+    height: 210px;
+    padding:7px;
+    margin: 8px 10px;
+  }
+}
 
-Extra (xl) large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) { ... }
-*/
+/* Large (lg) devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .photos div{
+    height: 260px;
+  }
+}
+
+/* Extra (xl) large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .photos div{
+    height:350px;
+  }
+}
+
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
 html, body{
   height: 100%;
