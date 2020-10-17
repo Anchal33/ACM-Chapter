@@ -1,10 +1,30 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
-html, body{
-  height: 100%;
-  width: 100%;
-  font-family: 'Poppins', sans-serif;
-  color: #222;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+html,
+body {
+  background-color: #fff;
+  color: #555;
+  font-family: "Lato", "Arial", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+.clearfix {
+  zoom: 1;
+}
+.clearfix:after {
+  content: "";
+  clear: both;
+  visibility: hidden;
+  display: block;
+  height: 0;
+}
+
 /*---Media Queries --*/
 @media (max-width: 992px) {
 .social a{
@@ -44,37 +64,155 @@ html, body{
   padding: 4px 8px;
 }
 }
-/* navbar */
-.navbar{
-  background-color: #008DD5;
-  padding: .8rem;
+
+header {
+  background-image: linear-gradient(rgb(0, 0, 0, 0.7), rgb(0, 0, 0, 0.7)),
+    url(./images/event/background.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  background-attachment: fixed;
 }
-.navbar-nav li{
-  padding-right: 20px;
+.navbar {
+  padding: 1rem 2rem !important;
+  transition: 0.3s ease;
+  z-index: 99999;
 }
-.nav-link{
-  font-size: 1.1em !important;
-}
-.navbar-brand img{
+
+.logo {
+  float: left;
   height: 50px;
   width: auto;
 }
-/* Image Slider */
-.black-overlay{
+.nav-item a {
+  color: white;
+  font-size: 1rem;
+  font-weight: 300;
+  margin: 0px 5px;
+  letter-spacing: 3px;
+  transition: all 0.5s;
+}
+
+.collapse {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.nav-item a:hover {
+  color:#5d8ddc;
+}
+i.fa {
+  color: white;
+}
+span.navbar-toggler-icon {
+  padding: 3px;
+}
+
+.navbar button {
+  outline: none;
+}
+.heading {
+  font-size: 250%;
+  font-weight: 700;
+}
+.hero-text-box {
+  text-align: center;
   position: absolute;
-  top: 0px;
-  left: 0px;
-  height: 100%;
+  top: 50%;
+  left: 50%;
+  width: 1140px;
+  transform: translate(-50%, -50%);
+}
+#hero-para{
+  color: #D6CCCC;
+}
+.sticky {
+  transition: 0.4s;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 0 2rem !important;
   width: 100%;
-  background: rgba(0, 0, 0,0.7);
+  /* background-color: rgba(255, 255, 255, 0.95) !important;  */
+    background-image: linear-gradient(90deg, #87ABE5ff, #82A8E4ff, #80A6E4ff, #78A0E2ff, #759EE1ff,
+   #729CE1ff, #6A96DFff, #6895DEff, #6593DEff, #6291DDff, #608FDDff, #5D8DDCff) !important;
+
+  box-shadow: 0 1px 3px #f0f0f0;
+  z-index: 9999;
 }
-.carousel-caption h1{
-  font-size: 500%;
-  text-transform: uppercase;
-  text-shadow: 1px 1px 10px #000;
+.sticky .logo {
+  float: left;
+  height: 50px;
+  width: auto;
 }
-.padding{
-  padding-bottom: 2rem;
+.sticky .nav-item a {
+  /* color: #5d8ddc; */
+  font-weight: 350;
+}
+.sticky i.fa {
+  color: white;
+}
+.sticky .nav-item a:hover {
+  color:black;
+}
+.navbar-toggler{
+  position: relative;
+}
+
+.navigation__icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+  
+.navigation_icon, .navigationicon::before, .navigation_icon::after {
+  width: 25px;
+  height: 2px;
+  background-color: #fff;
+  transition: all .2s;
+  display: inline-block; 
+}
+    
+.navigation_icon::before, .navigation_icon::after {
+  content: "";
+  position: absolute;
+  left: 0;
+}
+
+.navigation__icon::before {
+  top: -8px; 
+}
+  
+.navigation__icon::after {
+  top: 8px; 
+}
+
+.navbar-toggler:hover .navigation__icon{
+    background-color: rgb(240, 240, 240);
+  }
+.navbar-toggler:hover .navigation__icon:before {
+  background-color: rgb(240, 240, 240); 
+}
+ 
+
+.navbar-toggler:hover .navigation__icon:after {
+  background-color: rgb(240, 240, 240); 
+}
+
+
+.navigation__icon.active {
+  background-color: transparent !important;
+}
+
+.navigation__icon.active::before {
+  transform: rotate(135deg);
+  top: 0; 
+}
+
+.navigation__icon.active::after {
+  transform: rotate(-135deg);
+  top: 0; 
 }
 /* Welcom text and cards overlay animation*/
 .welcome{
@@ -171,7 +309,6 @@ html, body{
 }
 
 /* lightbox gallery */
-
 .photos div{
   height: 300px;
   padding: 10px;
@@ -310,13 +447,7 @@ figure {
   }
 }
 
-@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
-html, body{
-  height: 100%;
-  width: 100%;
-  font-family: 'Poppins', sans-serif;
-  color: #222;
-}
+
 /*---Media Queries --*/
 @media (max-width: 992px) {
 .social a{
@@ -358,41 +489,6 @@ html, body{
   font-size: 90%;
   padding: 4px 8px;
 }
-}
-/* navbar */
-.navbar{
-  background-color: #008DD5;
-  padding: .8rem;
-}
-.navbar-nav li{
-  padding-right: 20px;
-}
-.nav-link{
-  font-size: 1.1em !important;
-}
-.navbar-brand img{
-  height: 50px;
-  width: auto;
-}
-/* Image Slider */
-.black-overlay{
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  height: 100%;
-  width: 100%;
-  background: rgba(0, 0, 0,0.7);
-}
-.carousel-caption h1{
-  font-size: 500%;
-  text-transform: uppercase;
-  text-shadow: 1px 1px 10px #000;
-}
-.padding{
-  padding-bottom: 2rem;
-}
-#slides {
-  margin-bottom: 20px;
 }
 
 /* Welcom text and cards overlay animation*/

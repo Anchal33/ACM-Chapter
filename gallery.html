@@ -15,52 +15,49 @@
 	<link href="./css/gallery.css" rel="stylesheet">
 </head>
 <body>
-<!-- Navigation -->
-<nav class="navbar navbar-expand-md navbar-light sticky-top">
-	<div class="container-fluid">
- <a href="#" class="navbar-brand"><img class="logo" src="./css/images/acmCuiet.png" alt="LOGO"/></a>
-  <button type="button" name="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarResponsive">
-   <span class="navbar-toggler-icon"></span>
-	</button>
-	<div class="collapse navbar-collapse" id="navbarResponsive">
-		<ul class="navbar-nav ml-auto">
-      <li class="nav-item">
-        <a class="nav-link" href="#">About Us</a>
-			</li>
-			<li class="nav-item">
-        <a class="nav-link" href="#">Events</a>
-			</li>
-			<li class="nav-item">
-        <a class="nav-link" href="#">Office Bearers</a>
-			</li>
-			<li class="nav-item">
-        <a class="nav-link" href="#">Contact</a>
-			</li>
-		</ul>
-	</div>
-	</div>
-</nav>
+	<div class="eventTop">
+        <header>
+            <nav class="navbar navbar-expand-lg">
+                <a class="navbar-brand" href="#"><img class="logo" src="./css/images/acmCuiet.png" alt="" /></a>
 
-<!--- Image Slider -->
-<div id="slides" class="carousel slide" data-ride="carousel">
-	<ul class="carousel-indicators">
-		<li data-target="#slides" data-slide-to="0" class="active"></li>
-	</ul>
-	<div class="carousel-inner">
-		<div class="carousel-item active">
-			<img src="./css/images/event/background.jpg" alt="">
-    <div class="black-overlay">
+                <!-- navbar toggler -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav"
+                    aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navigation__icon">
+                        &nbsp;
+                    </span>
+                    </label>
+                </button>
+
+                <div class="collapse navbar-collapse flex-row-reverse" id="nav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item ">
+                            <a class="nav-link" href="#about">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#events">Events</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#team">Office Bearers</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="gallery.html">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#footer">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="hero-text-box">
+                <h1 class="heading">Gallery</h1>
+                <p id="hero-para">We organize techincal as well as fun events for the students of Chitkara University.
+                    We also organize workshops in which students can participate and
+                    work on latest technologies apart from their studies</p>
+            </div>
+        </header>
     </div>
-		<div class="carousel-caption">
-			<h1 class="display-2">Gallery</h1>
-			<p>This is a sample text replace it by something like, this is our gallery page
-			it shows photographs of all the events acm has organised.</p>
-				<button type="button" name="button" class="btn btn-outline-light btn-lg">View Events</button><!--this button rediect to events page-->
-				<button type="button" name="button" class="btn btn-primary btn-lg">Connect</button>
-		</div>
-		</div>
-	</div>
-</div>
 
 <!--- Gallery -->
 <div id="myBtnContainer">
@@ -577,6 +574,23 @@
 			this.className += " active";
 		  });
 		}
+		</script>
+		<!-- sticky navbar -->
+		<script>
+			const navbar = document.querySelector("nav"),
+				navposition = navbar.offsetTop;
+	
+	
+			document.addEventListener("scroll", () => {
+				if (window.pageYOffset > navposition) {
+					navbar.classList.add("sticky");
+	
+				}
+				else {
+					navbar.classList.remove("sticky")
+				}
+			})
+	
 		</script>
 </body>
 </html>
