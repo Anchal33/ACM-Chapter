@@ -60,15 +60,16 @@
 		</nav>
             <div class="hero-text-box">
                 <h1 class="heading">Gallery</h1>
-                <p id="hero-para">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-					 Nisi dicta vitae inventore ducimus eveniet minus porro beatae at officiis a 
-					 laboriosam fuga architecto laudantium accusamus veritatis, doloribus exercitationem? 
-					 Nesciunt, illo!</p>
+                <p id="hero-para">
+					Dive into best elements from Chitkara ACM family
+				</p>
+				<br>
+				<a href="#gallery">SCROLL DOWN</a>
             </div>
 		</header>
 		
 		<!-- Gallery -->
-		<section>
+		<section id="gallery">
 			<img src="./css/images/event/img-1.jpg" />
 			<img src="./css/images/event/img-2.jpg" />
 			<img src="./css/images/event/img-3.jpg" />
@@ -166,6 +167,7 @@
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
 			integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
 			crossorigin="anonymous"></script>
+			<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 
 	<!-- sticky navbar -->
     <script>
@@ -206,6 +208,7 @@
 			$(".arrowr").css("display", "block");
 			$(".arrowl").css("display", "block");
 		}
+		$("nav").css("display","none");
 		});
 
 		$(".close").click(function() {
@@ -213,6 +216,7 @@
 		$("h1").remove();
 		$(".lightbox img").remove();
 		$("html").css("overflow", "auto");
+		$("nav").css("display","flex");
 		});
 
 		$(document).keyup(function(e) {

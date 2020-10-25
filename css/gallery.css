@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 html,
 body {
@@ -251,6 +252,18 @@ span.navbar-toggler-icon {
 }
 #hero-para{
   color: #D6CCCC;
+  font-size: 120%;
+  font-weight: 350;
+}
+.hero-text-box a {
+  text-decoration: none;
+  color: #D6CCCC;
+  font-size: 110%;
+  font-weight: 300;
+  cursor: pointer;
+}
+.hero-text-box a:hover {
+  color: #5d8ddc;
 }
 /**STICKY NAVIGATION**/
 
@@ -355,6 +368,11 @@ section {
 section img {
   width: 100%;
   cursor: pointer;
+  filter: brightness(0.8);
+  transition: .5s ease;
+}
+section img:hover {
+  filter: brightness(1.1);
 }
 
 .lightbox {
