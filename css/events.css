@@ -747,23 +747,24 @@ table th {
     /* Specify a stack order in case you're using a different order for other elements */
     cursor: pointer;
     /* Add a pointer on hover */
+    overflow-y: scroll;
 }
-
+.port::-webkit-scrollbar
+{
+    display: none;
+}
 .port img {
-    width: 50%;
+    width: 30%;
 }
 
 .port .description {
     float: left;
-    width: 50%;
-    max-height: 100%;
-    padding: 0 40px 40px;
-    overflow: auto;
+    width: 30%;
+   
 }
 
-.port h1 {
-    font-size: 35px;
-    line-height: 2.3;
+.port h2 {
+    font-size: 20px;
     padding: 0;
 }
 
@@ -779,7 +780,7 @@ table th {
     opacity: 1;
 }
 
-.close {
+.close1 {
     width: 21px;
     height: 21px;
     background: url(data:image/svg+xml;utf8,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%0A%3C%21--%20Generator%3A%20Adobe%20Illustrator%2017.1.0%2C%20SVG%20Export%20Plug-In%20.%20SVG%20Version%3A%206.00%20Build%200%29%20%20--%3E%0A%3C%21DOCTYPE%20svg%20PUBLIC%20%22-//W3C//DTD%20SVG%201.1//EN%22%20%22http%3A//www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd%22%3E%0A%3Csvg%20version%3D%221.1%22%0A%09%20id%3D%22svg2%22%20xmlns%3Adc%3D%22http%3A//purl.org/dc/elements/1.1/%22%20xmlns%3Acc%3D%22http%3A//creativecommons.org/ns%23%22%20xmlns%3Ardf%3D%22http%3A//www.w3.org/1999/02/22-rdf-syntax-ns%23%22%20xmlns%3Asvg%3D%22http%3A//www.w3.org/2000/svg%22%0A%09%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%20x%3D%220px%22%20y%3D%220px%22%20viewBox%3D%220%200%2021%2021%22%0A%09%20enable-background%3D%22new%200%200%2021%2021%22%20xml%3Aspace%3D%22preserve%22%3E%0A%3Cg%20id%3D%22layer1%22%20transform%3D%22translate%280%2C-1031.3622%29%22%3E%0A%09%3Cpath%20id%3D%22path2987%22%20fill%3D%22none%22%20stroke%3D%22%23000000%22%20d%3D%22M0%2C1031.4l21%2C21%22/%3E%0A%09%3Cpath%20id%3D%22path2989%22%20fill%3D%22none%22%20stroke%3D%22%23000000%22%20d%3D%22M21%2C1031.4l-21%2C21%22/%3E%0A%3C/g%3E%0A%3C/svg%3E%0A%0A) no-repeat;
@@ -790,7 +791,7 @@ table th {
     z-index: 1004;
 }
 
-.item_open .close {
+.item_open .close1 {
     opacity: 1;
     top: 0px;
 }
@@ -1052,3 +1053,186 @@ table th {
         -webkit-transform: rotate(270deg);
     }
 }
+
+
+
+
+
+
+
+
+  
+  .gallery1
+  {
+      display:flex;
+      justify-content: space-evenly;
+  }
+
+ .e1>img
+  {
+height:250px;
+width:250px;
+
+  }
+
+  .gallery2
+  {
+      display:flex;
+      justify-content: space-evenly;
+  }
+  .e1:hover
+  {
+  border:4px solid rgb(26, 76, 240) !important;
+ 
+  }
+ 
+  
+  .e1 {
+    position: relative;
+    padding: 0;
+    width: 250px;
+    display: block;
+    cursor: pointer;
+    overflow: hidden;
+  }
+  
+  .content1 {
+    opacity: 0;
+    font-size: 40px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #010c13;
+    background-color: rgba(200, 200, 200, 0.5);
+    width: 250px;
+    height: 250px;
+    -webkit-transition: all 400ms ease-out;
+    -moz-transition: all 400ms ease-out;
+    -o-transition: all 400ms ease-out;
+    -ms-transition: all 400ms ease-out;
+    transition: all 400ms ease-out;
+    text-align: center;
+  }
+  
+  .e1 .content1:hover {
+    opacity: 1;
+  }
+  
+  .e1 .content1 .text1 {
+    height: 0;
+    opacity: 1;
+    transition-delay: 0s;
+    transition-duration: 0.4s;
+  }
+  
+  .e1 .content1:hover .text1 {
+    opacity: 1;
+    transform: translateY(150px);
+    -webkit-transform: translateY(150px);
+  }
+  .e1 .content1 .text2 {
+    height: 0;
+    opacity: 1;
+    transition-delay: 0s;
+    transition-duration: 0.4s;
+  }
+  
+  .e1 .content1:hover .text2 {
+    opacity: 1;
+    transform: translateY(150px);
+    -webkit-transform: translateY(150px);
+  }
+  .e1 .content1 .text3 {
+    height: 0;
+    opacity: 1;
+    transition-delay: 0s;
+    transition-duration: 0.4s;
+  }
+  
+  .e1 .content1:hover .text3 {
+    opacity: 1;
+    transform: translateY(150px);
+    -webkit-transform: translateY(150px);
+  }
+  .e1 .content1 .text4 {
+    height: 0;
+    opacity: 1;
+    transition-delay: 0s;
+    transition-duration: 0.4s;
+  }
+  
+  .e1 .content1:hover .text4 {
+    opacity: 1;
+    transform: translateY(150px);
+    -webkit-transform: translateY(150px);
+  }
+  .e1 .content1 .text5 {
+    height: 0;
+    opacity: 1;
+    transition-delay: 0s;
+    transition-duration: 0.4s;
+  }
+  
+  .e1 .content1:hover .text5 {
+    opacity: 1;
+    transform: translateY(150px);
+    -webkit-transform: translateY(150px);
+  }
+  .e1 .content1 .text6 {
+    height: 0;
+    opacity: 1;
+    transition-delay: 0s;
+    transition-duration: 0.4s;
+  }
+  
+  .e1 .content1:hover .text6 {
+    opacity: 1;
+    transform: translateY(150px);
+    -webkit-transform: translateY(150px);
+  }
+ 
+
+  @media screen and (max-width: 900px)
+  {
+      .gallery1{
+          display:flex;
+          flex-direction: column;
+          justify-content: space-evenly;
+          overflow-y: visible;
+         
+      }
+      .gallery2{
+        display:flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        overflow-y: visible;
+      }
+    .e1{
+        margin-left: 230px;
+margin-top: 20px;
+margin-bottom: 20px;
+    }
+    
+  }
+  @media screen and (max-width: 768px)
+  {
+      .gallery1{
+          display:flex;
+          flex-direction: column;
+          justify-content: space-evenly;
+          overflow-y: visible;
+         
+      }
+      .gallery2{
+        display:flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        overflow-y: visible;
+      }
+    .e1{
+        margin-left: 130px;
+margin-top: 20px;
+margin-bottom: 20px;
+    }
+    
+  }
