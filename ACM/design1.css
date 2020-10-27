@@ -3,7 +3,7 @@
 
 header {
   background-image: linear-gradient(rgb(0, 0, 0, 0.7), rgb(0, 0, 0, 0.7)),
-    url(\herobg123.jpg);
+    url(\herobg1.jpg);
   background-position: center;
   background-size: cover;
   height: 100vh;
@@ -36,7 +36,7 @@ header {
   align-items: center;
 }
 .nav-item a:hover {
-  color:#5d8ddc;
+  color: #5d8ddc;
 }
 i.fa {
   color: white;
@@ -48,21 +48,16 @@ span.navbar-toggler-icon {
 .navbar button {
   outline: none;
 }
-.heading {
-  font-size: 250%;
-  font-weight: 700;
-}
+
 .hero-text-box {
-  text-align: center;
+  text-align: left;
+  color: white;
   position: absolute;
   top: 50%;
-  left: 50%;
-  width: 1140px;
-  transform: translate(-50%, -50%);
+  left: 10%;
+  max-width: 50%;
 }
-#hero-para{
-  color: #D6CCCC;
-}
+
 .sticky {
   transition: 0.4s;
   position: fixed;
@@ -71,8 +66,21 @@ span.navbar-toggler-icon {
   padding: 0 2rem !important;
   width: 100%;
   /* background-color: rgba(255, 255, 255, 0.95) !important;  */
-    background-image: linear-gradient(90deg, #87ABE5ff, #82A8E4ff, #80A6E4ff, #78A0E2ff, #759EE1ff,
-   #729CE1ff, #6A96DFff, #6895DEff, #6593DEff, #6291DDff, #608FDDff, #5D8DDCff) !important;
+  background-image: linear-gradient(
+    90deg,
+    #87abe5ff,
+    #82a8e4ff,
+    #80a6e4ff,
+    #78a0e2ff,
+    #759ee1ff,
+    #729ce1ff,
+    #6a96dfff,
+    #6895deff,
+    #6593deff,
+    #6291ddff,
+    #608fddff,
+    #5d8ddcff
+  ) !important;
 
   box-shadow: 0 1px 3px #f0f0f0;
   z-index: 9999;
@@ -90,9 +98,9 @@ span.navbar-toggler-icon {
   color: white;
 }
 .sticky .nav-item a:hover {
-  color:black;
+  color: black;
 }
-.navbar-toggler{
+.navbar-toggler {
   position: relative;
 }
 
@@ -100,43 +108,44 @@ span.navbar-toggler-icon {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
 }
-  
-.navigation_icon, .navigationicon::before, .navigation_icon::after {
+
+.navigation_icon,
+.navigationicon::before,
+.navigation_icon::after {
   width: 25px;
   height: 2px;
   background-color: #fff;
-  transition: all .2s;
-  display: inline-block; 
+  transition: all 0.2s;
+  display: inline-block;
 }
-    
-.navigation_icon::before, .navigation_icon::after {
+
+.navigation_icon::before,
+.navigation_icon::after {
   content: "";
   position: absolute;
   left: 0;
 }
 
 .navigation__icon::before {
-  top: -8px; 
-}
-  
-.navigation__icon::after {
-  top: 8px; 
+  top: -8px;
 }
 
-.navbar-toggler:hover .navigation__icon{
-    background-color: rgb(240, 240, 240);
-  }
-.navbar-toggler:hover .navigation__icon:before {
-  background-color: rgb(240, 240, 240); 
+.navigation__icon::after {
+  top: 8px;
 }
- 
+
+.navbar-toggler:hover .navigation__icon {
+  background-color: rgb(240, 240, 240);
+}
+.navbar-toggler:hover .navigation__icon:before {
+  background-color: rgb(240, 240, 240);
+}
 
 .navbar-toggler:hover .navigation__icon:after {
-  background-color: rgb(240, 240, 240); 
+  background-color: rgb(240, 240, 240);
 }
-
 
 .navigation__icon.active {
   background-color: transparent !important;
@@ -144,18 +153,13 @@ span.navbar-toggler-icon {
 
 .navigation__icon.active::before {
   transform: rotate(135deg);
-  top: 0; 
+  top: 0;
 }
 
 .navigation__icon.active::after {
   transform: rotate(-135deg);
-  top: 0; 
+  top: 0;
 }
-
-
-
-
-
 
 .start1234 {
   margin: 70px;
@@ -283,7 +287,59 @@ span.navbar-toggler-icon {
 .bg {
   background-color: #5d8ddc;
 }
+.social-links {
+  width: 100%;
+}
+footer h3 {
+  color: #fff;
+  letter-spacing: 5px;
+  width: 100%;
+  font-size: 2.5rem;
+}
+.social-links li {
+  display: inline-block;
+  margin: auto 20px;
+}
 
+.social-links li a:link,
+.social-links li a:visited {
+  text-decoration: none;
+  color: white;
+  border: 0;
+  transition: color 0.3s ease-in;
+  font-size: 160%;
+}
+.ion-social-facebook,
+.ion-social-twitter,
+.ion-social-googleplus,
+.ion-social-instagram {
+  transition: color 0.3s ease-in;
+}
+.ion-social-facebook:hover {
+  color: #3b5998;
+}
+.ion-social-twitter:hover {
+  color: #00aced;
+}
+.ion-social-googleplus:hover {
+  color: #dd4b39;
+}
+.ion-social-instagram:hover {
+  color: #517fa4;
+}
+.foot-links,
+.foot-links1 {
+  color: white;
+}
+.wave {
+  text-align: center;
+  margin: 20px auto;
+}
+footer p {
+  text-align: center;
+  color: white;
+  margin: 20px 20px;
+}
 /*responsive*/
 @media (max-width: 991px) {
   .team-section .team-items .item {
