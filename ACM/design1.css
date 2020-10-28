@@ -1,6 +1,13 @@
 @import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
 @import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800&display=swap");
 
+.office_bearers {
+  overflow-x : hidden !important;
+  box-sizing: border-box;
+  padding : 0 !important;
+  margin : 0 !important;
+}
+
 header {
   background-image: linear-gradient(rgb(0, 0, 0, 0.7), rgb(0, 0, 0, 0.7)),
     url(\herobg1.jpg);
@@ -295,6 +302,7 @@ footer h3 {
   letter-spacing: 5px;
   width: 100%;
   font-size: 2.5rem;
+  
 }
 .social-links li {
   display: inline-block;
@@ -333,7 +341,7 @@ footer h3 {
 }
 .wave {
   text-align: center;
-  margin: 20px auto;
+  margin-top: 20px;
 }
 footer p {
   text-align: center;
