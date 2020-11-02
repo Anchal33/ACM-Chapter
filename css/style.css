@@ -180,12 +180,57 @@ input[type="submit"]:active {
 /*----HEADER----*/
 /*------------------------------*/
 header {
-  background-image: linear-gradient(rgb(0, 0, 0, 0.7), rgb(0, 0, 0, 0.7)),
-    url(images/back.jpg);
+  background-image: linear-gradient(
+    rgba(85, 170, 214, 0.65) 30%,
+    rgba(85, 170, 214, 0.55) 70%,
+    rgba(85, 170, 214, 0.45) 100%
+  ),
+    url(images/hero.jpg);
   background-position: center;
   background-size: cover;
   height: 100vh;
   background-attachment: fixed;
+}
+.fa-chevron-down {
+  color: white;
+  /* margin-top: 2.5%; */
+  /* margin-left: 49.5%; */
+  font-size: 2rem;
+  animation-name: move 1s infinite alternate;
+}
+@keyframes move {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+.fa-chevron-down {
+  margin-top: 2.5%;
+  color: floralwhite;
+  font-weight: bolder;
+  font-size: 2.5rem;
+  -webkit-animation: mover 1s infinite alternate;
+  animation: mover 1s infinite alternate;
+  cursor: pointer;
+}
+
+@-webkit-keyframes mover {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+@keyframes mover {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
 }
 .navbar {
   padding: 1rem 2rem !important;
