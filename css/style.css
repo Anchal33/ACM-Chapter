@@ -175,7 +175,9 @@ input[type="submit"]:active {
 .btn-ghost:active {
   color: #fff;
 }
-
+.hidden{
+  display: none;
+}
 /*-------------------------------*/
 /*----HEADER----*/
 /*------------------------------*/
@@ -324,8 +326,10 @@ span.navbar-toggler-icon {
 .heading {
   font-size: 250%;
   font-weight: 700;
+  margin-top: 10px;
 }
 .hero-text-box {
+  opacity: 0;
   text-align: center;
   position: absolute;
   top: 50%;
@@ -339,11 +343,10 @@ span.navbar-toggler-icon {
 /**STICKY NAVIGATION**/
 
 .sticky {
-  transition: 0.4s;
   position: fixed;
   top: 0;
   left: 0;
-  padding: 0 2rem !important;
+  padding: 0 2rem 10px!important;
   width: 100%;
   background-image:linear-gradient(90deg, #000000ff, #020202ff, #040404ff, #050505ff,
    #070707ff, #090909ff, #0B0B0Bff, #0C0C0Cff, #0E0E0Eff, #101010ff, #121212ff,
@@ -353,6 +356,7 @@ span.navbar-toggler-icon {
    
   box-shadow: 0 1px 3px   black;
   z-index: 9999;
+  transition: 1s ease-in-out;
 }
 .sticky i.fa {
   color: white;
