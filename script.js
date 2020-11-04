@@ -99,7 +99,8 @@ toggelButton.addEventListener("click",()=>{
 });
 
 const tl = gsap.timeline({defaults:{ease:"power1.out"}});
-tl.to('.hero-text-box',{opacity:1, duration:0.4});
-tl.fromTo('.logo',{scale:0},{scale:1.2, duration:1});
-tl.fromTo('.heading',{opacity:0},{opacity:1, duration:2});
-tl.fromTo('.fa-chevron-down',{opacity:0},{opacity:1, duration:1},"-=1");
+tl.fromTo('.scene-logo',{scale:0},{scale:1.2,delay:0,duration:2});
+    tl.to('.scene-h1>span',{opacity:1,y:0,duration:1});
+    tl.to('.scene-wrapper',{height:0,opacity:0,duration:1,delay:1});
+    tl.to('.blue-div',{opacity:0,height:0,delay:1},"-=1");
+    tl.to('.scene-wrapper',{y:-1000,opacity:0,duration:1,delay:1});
