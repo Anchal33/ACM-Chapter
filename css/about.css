@@ -461,10 +461,15 @@
         padding: 60px;
     }
 		.display-4{
-	font-size: 200%;
+	font-size: 1.2rem%;
 }
 }
 hero ends here */
+@media screen and (max-width:425px){
+		.display-4{
+	font-size: 1.2rem;
+}
+}
 /* section2 */
 .welcome{
   width: 75%;
