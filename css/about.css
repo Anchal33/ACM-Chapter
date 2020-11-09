@@ -461,10 +461,15 @@
         padding: 60px;
     }
 		.display-4{
-	font-size: 200%;
+	font-size: 1.2rem%;
 }
 }
 hero ends here */
+@media screen and (max-width:425px){
+		.display-4{
+	font-size: 1.2rem;
+}
+}
 /* section2 */
 .welcome{
   width: 75%;
@@ -793,7 +798,7 @@ padding: 0 10px;
 /* Footer */
 /******************************/
 footer {
-    background-color: #333;
+    background-color: #5d8edd;
     padding-top: 30px;
     font-size: 80%;
     text-align: center;
@@ -816,7 +821,7 @@ footer {
   .social-links li a:link,
   .social-links li a:visited {
     text-decoration: none;
-    color: #888;
+    color: #fff;
     border: 0;
     transition: color 0.3s ease-in;
     font-size: 160%;
@@ -843,7 +848,7 @@ footer {
   
   footer p {
     text-align: center;
-    color: #888;
+    color: #fff;
     margin: 20px auto;
   }
   
@@ -883,13 +888,13 @@ footer {
   }
   .foot-links
   {
-    color: #8ecee6;
+    color: #fff;
     border-right: 1px solid blanchedalmond;
     padding: 0 15px;
   }
   .foot-links1
   {
-    color: #8ecee6;
+    color: #fff;
     padding: 0 15px;
   }
   .hide {
