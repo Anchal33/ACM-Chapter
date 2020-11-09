@@ -297,6 +297,7 @@ span.navbar-toggler-icon {
   left: 50%;
   width: 1140px;
   transform: translate(-50%, -50%);
+  color: #d6cccc;
 }
 #hero-para{
   color: #D6CCCC;
