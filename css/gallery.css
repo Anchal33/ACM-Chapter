@@ -458,7 +458,6 @@ section img:hover {
 [class^="arrow"] {
   height: 200px;
   width: 50px;
-  background: rgba(0, 0, 0, 0.4);
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -471,8 +470,8 @@ section img:hover {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) rotate(-45deg);
-  width: 15px;
-  height: 15px;
+  width: 20px;
+  height: 20px;
 }
 
 .arrowr {
@@ -480,8 +479,8 @@ section img:hover {
 }
 
 .arrowr:after {
-  border-right: 1px solid white;
-  border-bottom: 1px solid white;
+  border-right: 2px solid white;
+  border-bottom: 2px solid white;
 }
 
 .arrowl {
@@ -489,16 +488,15 @@ section img:hover {
 }
 
 .arrowl:after {
-  border-left: 1px solid white;
-  border-top: 1px solid white;
+  border-left: 2px solid white;
+  border-top: 2px solid white;
 }
 
 .close {
   position: absolute;
   right: 0;
-  width: 50px;
-  height: 50px;
-  background: rgba(0, 0, 0, 0.4);
+  width: 35px;
+  height: 35px;
   margin: 20px;
   cursor: pointer;
 }
@@ -509,7 +507,7 @@ section img:hover {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 1px;
+  width: 2px;
   height: 100%;
   background: #e74c3c;
 }
