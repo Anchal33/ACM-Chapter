@@ -311,17 +311,6 @@
   .hero-text-box a:hover {
     color: #5d8ddc;
   }
-  #contactusbtn{
-    padding:10px 15px;
-    font-size: 16px;
-    border:1px solid white;
-    border-radius:40px;
-    cursor: pointer;
-  }
-  #contactusbtn:hover{
-    background-color: white;
-    color:rgb(63, 63, 63);
-  }
   /**STICKY NAVIGATION**/
   
   .sticky {
@@ -809,7 +798,7 @@ padding: 0 10px;
 /* Footer */
 /******************************/
 footer {
-    background-color: #5d8edd;
+    background-color: #333;
     padding-top: 30px;
     font-size: 80%;
     text-align: center;
@@ -832,7 +821,7 @@ footer {
   .social-links li a:link,
   .social-links li a:visited {
     text-decoration: none;
-    color: #fff;
+    color: #888;
     border: 0;
     transition: color 0.3s ease-in;
     font-size: 160%;
@@ -859,7 +848,7 @@ footer {
   
   footer p {
     text-align: center;
-    color: #fff;
+    color: #888;
     margin: 20px auto;
   }
   
@@ -899,13 +888,13 @@ footer {
   }
   .foot-links
   {
-    color: #fff;
+    color: #8ecee6;
     border-right: 1px solid blanchedalmond;
     padding: 0 15px;
   }
   .foot-links1
   {
-    color: #fff;
+    color: #8ecee6;
     padding: 0 15px;
   }
   .hide {
