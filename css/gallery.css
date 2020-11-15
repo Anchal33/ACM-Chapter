@@ -329,7 +329,7 @@ span.navbar-toggler-icon {
   position: fixed;
   top: 0;
   left: 0;
-  padding: 0 2rem !important;
+  padding: 0 2rem 10px!important;
   width: 100%;
   background-color: #5d8ddc !important;
   box-shadow: 0 1px 3px #5d8ddc;
